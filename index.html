@@ -1,24 +1,255 @@
-<html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="index.css" />
-    </head>
-    <header>
-        <title>Alexandru Pavel</title>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alexandru Pavel | Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="logo" aria-label="Alexandru Pavel initials">AP</div>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </header>
-    <body>
-        <div class="container"> 
-            <div class="section" style="background-image: url(pics/alex.jpg)"></div> 
-            <div class="section" style="background-image: url(pics/accounting.jpeg)">Financial Accounting</div> 
-            <div class="section" style="background-image: url(pics/gastronomy.jpg)">Gastronomy</div>
-            <div class="section" style="background-image: url(pics/machinelearning.jpg)">Machine Learning</div>
-            <div class="section" style="background-image: url(pics/fullstack.JPG)">Full-Stack Development</div>
-            <div class="section" style="background-image: url(pics/contabilitate.jpg); color: red">Acado Accounting App</div>
-            <div class="section" style="background-image: url(pics/restaurant.jpg); color: red">Restaurant App</div>
-            <div class="section" style="background-color:steelblue">ChatBot App</div>
-            <div class="section" style="background-color:lightsalmon">Contact</div>
-            <div class="section" style="background-color:lightpink">React JS + Redux</div>
-            <div class="section" style="background-color:aqua">Node JS + Express JS</div> 
-            <div class="section" style="background-color:wheat">MongoDB + FoxPro</div> 
+
+    <main>
+      <section id="hero" class="hero">
+        <div class="hero__content">
+          <p class="eyebrow">Hello, I'm</p>
+          <h1>Alexandru Pavel</h1>
+          <p class="subtitle">Software Engineer · Full-Stack Developer · Cloud &amp; Data Enthusiast</p>
+          <p class="description">
+            I design and deliver resilient platforms that blend clean code with secure cloud-native
+            architectures. My sweet spot is bringing modern web experiences to life while aligning
+            backend services, data processing, and infrastructure automation into a cohesive delivery
+            pipeline.
+          </p>
+          <div class="hero__actions">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn secondary" href="#contact">Get in Touch</a>
+          </div>
         </div>
-    </body>
+        <div class="hero__panel">
+          <div class="panel-card">
+            <p class="panel-label">Currently focusing on</p>
+            <h3>Cloud-native data products</h3>
+            <ul>
+              <li>Event-driven architectures</li>
+              <li>Developer experience &amp; CI/CD</li>
+              <li>Reliable analytics pipelines</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section about">
+        <div class="section-header">
+          <p class="eyebrow">About</p>
+          <h2>Shaping useful software with empathy and rigor</h2>
+        </div>
+        <div class="section-body about__grid">
+          <p>
+            I am a full-stack engineer with a passion for translating business ideas into modern cloud
+            solutions. My background spans enterprise platforms, SaaS products, and internal tools,
+            all delivered with maintainability, observability, and automation in mind.
+          </p>
+          <p>
+            I have shipped solutions in Azure leveraging Kubernetes, serverless components, and
+            managed data services. From Java services and Python data jobs to polished web
+            experiences, I enjoy connecting the dots between front-end delight and backend
+            reliability. When not coding, you can find me mentoring teams on DevOps culture or
+            experimenting with new data platform capabilities.
+          </p>
+        </div>
+      </section>
+
+      <section id="skills" class="section skills">
+        <div class="section-header">
+          <p class="eyebrow">Skills</p>
+          <h2>Tools I use to build scalable experiences</h2>
+        </div>
+        <div class="skills__grid">
+          <article class="skill-card">
+            <h3>Programming</h3>
+            <p>Java · Python · TypeScript · SQL · HTML/CSS</p>
+          </article>
+          <article class="skill-card">
+            <h3>Cloud &amp; DevOps</h3>
+            <p>Azure · Kubernetes · Docker · Terraform · GitHub Actions · CI/CD automation</p>
+          </article>
+          <article class="skill-card">
+            <h3>Data &amp; Tools</h3>
+            <p>Apache Spark · PostgreSQL · Azure Event Hubs · Databricks · Monitoring &amp; Observability</p>
+          </article>
+          <article class="skill-card">
+            <h3>Product Mindset</h3>
+            <p>Agile leadership · Discovery workshops · Technical writing · Stakeholder alignment</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="section experience">
+        <div class="section-header">
+          <p class="eyebrow">Experience</p>
+          <h2>Recent highlights</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <p class="timeline__period">2022 — Present</p>
+              <h3>Senior Developer · Project M</h3>
+              <p>
+                Led an automotive cloud initiative delivering telemetry ingestion, data modeling, and
+                predictive services across Azure Kubernetes Service and Event Hubs.
+              </p>
+            </div>
+          </article>
+          <article class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <p class="timeline__period">2020 — 2022</p>
+              <h3>Lead Full-Stack Engineer · Connected Fleet Platform</h3>
+              <p>
+                Architected micro frontends and Java backends, introducing automated pipelines and
+                infrastructure as code to accelerate releases.
+              </p>
+            </div>
+          </article>
+          <article class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <p class="timeline__period">2018 — 2020</p>
+              <h3>Cloud Engineer · Data Foundation Team</h3>
+              <p>
+                Built serverless data ingestion patterns, governed data catalogs, and coached teams on
+                observability best practices.
+              </p>
+            </div>
+          </article>
+          <article class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <p class="timeline__period">2015 — 2018</p>
+              <h3>Software Engineer · Digital Services</h3>
+              <p>
+                Delivered internal web tools, optimized SQL workloads, and helped migrate legacy
+                systems to modern DevOps-friendly workflows.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section projects">
+        <div class="section-header">
+          <p class="eyebrow">Projects</p>
+          <h2>Selected work</h2>
+        </div>
+        <div class="projects__grid">
+          <article class="project-card">
+            <div>
+              <p class="project-card__type">Cloud · Data</p>
+              <h3>Project M Insights</h3>
+              <p>
+                Unified data platform for connected vehicles with streaming ingestion, curated layers,
+                and self-service analytics.
+              </p>
+            </div>
+            <div class="project-card__meta">
+              <span>Azure</span><span>AKS</span><span>Databricks</span>
+            </div>
+            <div class="project-card__links">
+              <a href="#" class="text-link">GitHub</a>
+              <a href="#" class="text-link">Demo</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <div>
+              <p class="project-card__type">Full-Stack</p>
+              <h3>Operations Control Hub</h3>
+              <p>
+                Modular portal enabling operators to monitor fleets, trigger workflows, and review
+                telemetry insights in real time.
+              </p>
+            </div>
+            <div class="project-card__meta">
+              <span>React</span><span>Node.js</span><span>PostgreSQL</span>
+            </div>
+            <div class="project-card__links">
+              <a href="#" class="text-link">GitHub</a>
+              <a href="#" class="text-link">Demo</a>
+            </div>
+          </article>
+          <article class="project-card">
+            <div>
+              <p class="project-card__type">Automation</p>
+              <h3>DevOps Blueprint</h3>
+              <p>
+                Reference implementation of CI/CD workflows, IaC modules, and observability guides to
+                bootstrap new product teams.
+              </p>
+            </div>
+            <div class="project-card__meta">
+              <span>Terraform</span><span>GitHub Actions</span><span>Grafana</span>
+            </div>
+            <div class="project-card__links">
+              <a href="#" class="text-link">GitHub</a>
+              <a href="#" class="text-link">Demo</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="section-header">
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s build something impactful</h2>
+        </div>
+        <div class="contact__grid">
+          <p>
+            I love collaborating on projects that balance thoughtful UX with robust engineering. If
+            you want to discuss an idea, open-source project, or consulting need, feel free to reach
+            out via email or connect on social platforms.
+          </p>
+          <div class="contact__details">
+            <a href="mailto:alexandru.pavel@example.com" class="contact__item">
+              <span>Email</span>
+              <strong>alexandru.pavel@example.com</strong>
+            </a>
+            <a href="#" class="contact__item">
+              <span>GitHub</span>
+              <strong>github.com/alexandrupavel87</strong>
+            </a>
+            <a href="#" class="contact__item">
+              <span>LinkedIn</span>
+              <strong>linkedin.com/in/alexandrupavel</strong>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Alexandru Pavel · Built with HTML, CSS, and vanilla JS</p>
+    </footer>
+  </body>
 </html>
